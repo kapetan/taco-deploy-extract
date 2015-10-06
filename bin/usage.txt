@@ -1,0 +1,5 @@
+Usage: taco-deploy-extract <path> <options>
+
+Options:
+
+--name    Application name. Defaults to name in package.json.
