@@ -1,7 +1,7 @@
 {
   "name": "taco-deploy-extract",
   "version": "1.0.0",
-  "description": "Extract tar into taco deployment directories",
+  "description": "Extract tarballs into taco deployment directories",
   "main": "index.js",
   "scripts": {
     "test": "tape test/index.js"
