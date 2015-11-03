@@ -24,12 +24,15 @@ module.exports = function(options) {
 				return callback(err);
 			}
 		}
-
+		
 		var versionName = name + '-' + Date.now();
 		var versionDirectory = path.join(options.path, 'versions');
 		var versionPath = path.join(versionDirectory, versionName);
 		var deployDirectory = path.join(options.path, 'deploys');
 		var deployPath = path.join(deployDirectory, name);
+
+		stream.name = name;
+		stream.path = deployPath;
 
 		series([
 			function(next) {
